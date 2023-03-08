@@ -18,6 +18,7 @@ source=("${pkgname}-${pkgver}-linux.tar.gz::https://github.com/${pkgname}/Ventoy
         "${pkgname}.install::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy.install"
         "${pkgname}::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy"
         "${pkgname}gui::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoygui"
+        "${pkgname}-qt::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy-qt"
         "${pkgname}web::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoyweb"
         "${pkgname}plugson::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoyplugson"
         "${pkgname}-persistent::https://github.com/KaOS-Community-Packages/${pkgname}/blob/main/ventoy-persistent"
@@ -26,6 +27,7 @@ source=("${pkgname}-${pkgver}-linux.tar.gz::https://github.com/${pkgname}/Ventoy
         "sanitize.patch::https://raw.githubusercontent.com/KaOS-Community-Packages/${pkgname}/main/sanitize.patch")
 install="${pkgname}.install"
 sha256sums=('SKIP'
+            'SKIP'
             'SKIP'
             'SKIP'
             'SKIP'
@@ -85,8 +87,7 @@ package() {
     ln -fsv /usr/bin/$binary "$pkgdir/opt/${pkgname}/tool/$CARCH/"
   done
 
-  install -Dm755 "$srcdir/${pkgname}"{,gui,web,plugson,-{,extend-}persistent} -vt "$pkgdir"/usr/bin/
-  ln -fsv "$pkgdir/opt/$pkgname/tool/$CARCH/Ventoy2Disk.qt5" "$pkgdir/usr/bin/ventoy2disk.qt5"
+  install -Dm777 "$srcdir/${pkgname}"{,gui,-qt,web,plugson,-{,extend-}persistent} -vt "$pkgdir"/usr/bin/
 
   # Remove Gtk 2 files
   if [ $CARCH == "x86_64" ]; then
