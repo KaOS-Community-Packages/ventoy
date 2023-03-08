@@ -3,7 +3,7 @@ Version=1.89
 Type=Application
 Icon=ventoy
 Name=Ventoy
-Exec="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/bin/ventoy-qt"
+Exec=pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/bin/ventoy-qt
 Terminal=false
 Hidden=false
 Categories=Utility
