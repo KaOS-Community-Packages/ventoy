@@ -14,8 +14,9 @@ optdepends=('gtk3: GTK3 GUI'
             'polkit-qt5: QT wrapper for Polkit GUI')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
-install="${pkgname}.install::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy.install"
+install=("${pkgname}.install::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy.install")
 source=("${pkgname}-${pkgver}-linux.tar.gz::https://github.com/${pkgname}/Ventoy/releases/download/v${pkgver}/${pkgname}-${pkgver}-linux.tar.gz"
+        "${pkgname}.install::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy.install"
         "${pkgname}::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy"
         "${pkgname}gui::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoygui"
         "${pkgname}web::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoyweb"
@@ -25,6 +26,7 @@ source=("${pkgname}-${pkgver}-linux.tar.gz::https://github.com/${pkgname}/Ventoy
         "${pkgname}.desktop::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy.desktop"
         "sanitize.patch::https://raw.githubusercontent.com/KaOS-Community-Packages/${pkgname}/main/sanitize.patch")
 sha256sums=('SKIP'
+            'SKIP'
             'SKIP'
             'SKIP'
             'SKIP'
