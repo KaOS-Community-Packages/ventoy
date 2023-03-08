@@ -24,7 +24,7 @@ source=("${pkgname}-${pkgver}-linux.tar.gz::https://github.com/${pkgname}/Ventoy
         "${pkgname}-extend-persistent::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy-extend-persistent"
         "${pkgname}.desktop::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy.desktop"
         "sanitize.patch::https://raw.githubusercontent.com/KaOS-Community-Packages/${pkgname}/main/sanitize.patch")
-install=("${pkgname}.install::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy.install")
+install="${pkgname}.install"
 sha256sums=('SKIP'
             'SKIP'
             'SKIP'
