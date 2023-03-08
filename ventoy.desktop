@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.89
+Type=Application
+Icon=ventoy
+Name=Ventoy
+Exec=pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/bin/ventoy2disk.qt5
+Terminal=false
+Hidden=false
+Categories=Utility
+Comment=Ventoy2Disk QT GUI
