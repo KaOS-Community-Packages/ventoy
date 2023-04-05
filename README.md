@@ -9,7 +9,8 @@ Most types of OS supported (Windows/WinPE/Linux/ChromeOS/Unix/VMware/Xen...)
 
 #### 1000+ image files are tested | 90%+ distributions in [Distrowatch](https://distrowatch.com) are supported
 
-##### SOURCE: https://github.com/ventoy/Ventoy | HOME: https://www.ventoy.net/
+<h4 align="center"> 
+SOURCE: https://github.com/ventoy/Ventoy | HOME: https://www.ventoy.net/
 
 #### Install:
 ```
