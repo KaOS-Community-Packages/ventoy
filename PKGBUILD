@@ -1,6 +1,6 @@
 pkgname=ventoy
 _pkgname=Ventoy
-pkgver=1.0.89
+pkgver=1.0.91
 pkgrel=1
 pkgdesc="An open source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files, it is a new multiboot USB solution"
 arch=('x86_64')
@@ -14,7 +14,7 @@ optdepends=('gtk3: GTK3 GUI'
             'polkit-qt5: QT wrapper for Polkit GUI')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
-source=("${pkgname}-${pkgver}-linux.tar.gz::https://github.com/${pkgname}/Ventoy/releases/download/v${pkgver}/${pkgname}-${pkgver}-linux.tar.gz"
+source=("${pkgname}-${pkgver}-linux.tar.gz::https://github.com/ventoy/${_pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}-linux.tar.gz"
         "${pkgname}.install::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy.install"
         "${pkgname}::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoy"
         "${pkgname}gui::https://github.com/KaOS-Community-Packages/${pkgname}/raw/main/ventoygui"
@@ -69,7 +69,7 @@ prepare() {
 }
 
 package() {
-  cd "${pkgname}-$pkgver"
+  cd "$pkgname-$pkgver"
   install -Dm644 -vt      "$pkgdir/opt/${pkgname}/boot/"            boot/*
   install -Dm644 -vt      "$pkgdir/opt/${pkgname}/${pkgname}/"      "${pkgname}"/*
   install -Dm755 -vt      "$pkgdir/opt/${pkgname}/tool/"            tool/*.{cer,glade,json,sh,xz}
