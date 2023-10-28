@@ -1,7 +1,4 @@
 #!/bin/sh
 
-DISPLAY=:0
-XAUTHORITY=~/.Xauthority
-
-cd /opt/ventoy/tool/x86_64 || exit 1
-./Ventoy2Disk.qt5
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /opt/ventoy/tool/x86_64/Ventoy2Disk.qt5 "$@"
+exit 0

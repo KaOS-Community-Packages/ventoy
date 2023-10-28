@@ -1,3 +1,4 @@
 #!/bin/sh
 
-exec /opt/ventoy/ExtendPersistentImg.sh "$@"
+cd /opt/ventoy || exit 1
+exec sudo ./ExtendPersistentImg.sh "$@"
