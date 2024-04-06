@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd /opt/ventoy || exit 1
-exec sudo ./Ventoy2Disk.sh "$@"
+pkexec env DISPLAY="$DISPLAY" XAUTHORITY="$XAUTHORITY" "/opt/Ventoy/tool/x86_64/Ventoy2Disk.qt5" "$@"
+exit 0

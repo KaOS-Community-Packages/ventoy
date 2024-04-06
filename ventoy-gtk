@@ -1,4 +1,0 @@
-#!/bin/sh
-
-pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /opt/ventoy/VentoyGUI.x86_64 "$@"
-exit 0

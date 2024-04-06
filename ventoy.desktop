@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=Application
-Version=1.0.96
+Version=1.0
 Name=Ventoy
 GenericName=Multiboot Image Writer
 Comment=Ventoy2Disk QT GUI wrapper for Ventoy program
 Icon=ventoy
-Exec=ventoy-qt
-Path=/usr/bin
+Exec=/usr/bin/ventoy
+Path=/opt/Ventoy/
 Terminal=false
 Hidden=false
 Categories=Utility;

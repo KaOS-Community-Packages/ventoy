@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd /opt/ventoy || exit 1
-exec sudo ./VentoyWeb.sh "$@"
+cd "/opt/Ventoy/" || exit 1
+exec "./VentoyWeb.sh" "$@"
