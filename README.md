@@ -44,8 +44,7 @@ Most types of OS supported (Windows/WinPE/Linux/ChromeOS/Unix/VMware/Xen...)
 * Data nondestructive during version upgrade
 * No need to update Ventoy when a new distro is released
 
-<h4 align="left">
-[SOURCE:](https://github.com/ventoy/Ventoy) | [HOME:](https://www.ventoy.net/)
+#### [SOURCE](https://github.com/ventoy/Ventoy) | [HOME](https://www.ventoy.net/)
 
 #### Install:
 ```
