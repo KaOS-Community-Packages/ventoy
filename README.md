@@ -1,4 +1,9 @@
 # Ventoy
+
+### [SOURCE](https://github.com/ventoy/Ventoy) | [HOME](https://www.ventoy.net/)
+
+___
+
 Ventoy is an open source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files.
 With ventoy, you don't need to format the disk over and over, you just need to copy the ISO/WIM/IMG/VHD(x)/EFI files to the USB drive and boot them directly.        
 
@@ -44,7 +49,7 @@ Most types of OS supported (Windows/WinPE/Linux/ChromeOS/Unix/VMware/Xen...)
 * Data nondestructive during version upgrade
 * No need to update Ventoy when a new distro is released
 
-#### [SOURCE](https://github.com/ventoy/Ventoy) | [HOME](https://www.ventoy.net/)
+___
 
 #### Install:
 ```
